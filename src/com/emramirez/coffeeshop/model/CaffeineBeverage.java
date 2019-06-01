@@ -1,7 +1,12 @@
 package com.emramirez.coffeeshop.model;
 
 public abstract class CaffeineBeverage {
-    
+
+    /**
+     * This is a template method, it holds some common functionality,
+     * methods that MUST be implemented by the subclasses like brew() and hook for optional logic
+     * like addCondiments() only if customerWantsCondiments()
+     */
     public final void prepareRecipe() {
         boilWater();
         brew();
